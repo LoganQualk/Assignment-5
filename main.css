@@ -1,0 +1,133 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    background-color: hsl(233, 47%, 7%);
+    line-height: 1.5;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Use object-fit */
+
+img {
+    display: block;
+    /* position: relative; */
+    background-color: hsl(244, 38%, 16%);
+    width: 100%;
+    height: auto;
+    /* filter: invert(40%) sepia(49%) saturate(4627%) hue-rotate(285deg) brightness(89%) contrast(103%); */
+}
+
+/* #card-div {
+    background: hsl(277, 64%, 61%);
+} */
+
+/* #content-div {
+    padding: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+} */
+
+/* .wrap {
+    position: relative;
+}
+  
+.wrap img {
+    -webkit-filter: invert(40%) sepia(49%) saturate(4627%) hue-rotate(285deg) brightness(89%) contrast(103%);
+    filter: invert(40%) sepia(49%) saturate(4627%) hue-rotate(285deg) brightness(89%) contrast(103%);
+} */
+
+figure {
+    margin: 0;
+    position: relative;
+}
+
+img::after {
+    content: "";
+    display: block;
+    background: hsl(277, 64%, 61%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.object-contain {
+    object-fit: contain;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+}
+
+section {
+    background: hsl(244, 38%, 16%);
+    margin: 0;
+}
+
+span {
+    color:hsl(277, 64%, 61%)
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.max-width-prose {
+    max-width: 75ch;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-text-center {
+    text-align: center;
+}
+
+.at-bottom {
+    position: absolute;
+    bottom: 0;
+    justify-content: flex-end;
+}
+
+@media screen and (min-width: 50em) {
+    .flex {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .gap-1 {
+        gap: 1rem;
+    }
+
+    .flex > * {
+        flex-grow: 1;
+        width: 100%;
+    }
+}
